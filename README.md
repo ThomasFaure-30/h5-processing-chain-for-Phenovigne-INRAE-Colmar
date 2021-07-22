@@ -7,20 +7,20 @@
 ***PRINCIPAL***
  
  
-1 ==> main_copy_h5.py :
+* 1 ==> main_copy_h5.py :
 	This program (the first to be executed) takes two input while launching it from terminal. It expects the data folder of the raw output from the Phenovigne 
 	and the output folder for the h5 files. It expects something like this : main_copy_h5.py "--C:\\your\\data\\folder\\path" "--C:\\your\\output\\folder\\path"
 	The program create the mandatory data architecture for your output folder, which is used in the following programs.
 
-2 ==> main_rgb_extract.py
+* 2 ==> main_rgb_extract.py
 	This program extract the images from the h5 archives and save them as a tif image, it also apply a chosen white balance. 
 	You can execute it directly from the terminal. It only takes one input, at the beginning of the execution, to choose a white balance.
 
-3 ==> main_correct.py
+* 3 ==> main_correct.py
 	This program correct the distorsion and vigneting effect on images, it requires two sample to do so.
 	You can execute it directly from the terminal, it does not take any input.
 
-4 ==> main_lidar_extract.py
+* 4 ==> main_lidar_extract.py
 	This program extract from h5 archives the LiDAR data to create .las files. It also gives the metadata of the many acquisitions. 
 	You can execute it directly from the terminal, it does not take any input.
  
@@ -53,6 +53,14 @@
 	It will be executed regardless that your information (images) is stored directly in your folder path nor in subfolders.
 	It will creat an output 'results.txt' to store your data in the folder you indicated. It also assume that you image name contains the plot ID.
 
+
+## Acknowledgment ##
+
+The program used to get the vignetting matrix has been written by Sylvain Jay.
+It has been heavily reduced from it's original form, if you want the original script please contact him.
+
+I can only thanks him for the time sparing that it offers, when he gracefully shared his work with me. The csv file it produce is too much heavy for GitHub to upload it, if you need it, ask for it and you'll get an answer.
+
 # ============ LIBRARIES ============ #
 
 To easily install the libraries there is a ' requirements.txt ' file in this folder.
@@ -81,10 +89,3 @@ The used libraries are the following ones :
 -	tifffile                 2021.4.8
 -	tqdm                     4.60.0
 -	matplotlib               3.4.1
-
-## Acknowledgment ##
-
-The program used to get the vignetting matrix has been written by Sylvain Jay.
-It has been heavily reduced from it's original form, if you want the original script please contact him.
-
-I can only thanks him for the time sparing that it offers, when he gracefully shared his work with me. The csv file it produce is too much heavy for GitHub to upload it, if you need it, ask for it and you'll get an answer.
