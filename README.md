@@ -81,3 +81,10 @@ The used libraries are the following ones :
 -	tifffile                 2021.4.8
 -	tqdm                     4.60.0
 -	matplotlib               3.4.1
+
+## Acknowledgment ##
+
+The program used to get the vignetting matrix has been written by Sylvain Jay.
+It has been heavily reduced from it's original form, if you want the original script please contact him.
+
+I can only thanks him for the time sparing that it offers, when he gracefully shared his work with me. The csv file it produce is too much heavy for GitHub to upload it, if you need it, ask for it and you'll get an answer.
