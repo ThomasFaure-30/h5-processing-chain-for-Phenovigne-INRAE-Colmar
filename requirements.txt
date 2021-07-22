@@ -1,0 +1,17 @@
+colour-demosaicing==0.1.6
+colorama==0.4.4
+ExifRead==2.3.2
+h5-info-pkg-inra-phenome==1.1.8
+imagecodecs==2021.6.8
+laspy==1.7.0
+numpy==1.20.2
+opencv-contrib-python==4.5.1.48
+opencv-python==4.5.1.48
+panda==0.3.1
+pandas==1.2.4
+Pillow==8.2.0
+PySimpleGUI==4.45.0
+scipy==1.6.2
+tifffile==2021.4.8
+tqdm==4.60.0
+matplotlib==3.4.1
